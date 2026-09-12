@@ -12,9 +12,9 @@ Cursando Engenharia de Software, com interesse em desenvolvimento de software, I
 
 ## Meu repositório
 
-Confira também o meu repositório: [ Do aprendizado à prática: conheça meus projetos e minha trajetória em Tecnologia no meu portfólio. ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
+Confira também o meu repositório: [ Conheça meus projetos na prática. ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
 
-## LinkedIn
+## Conecte-se comigo
 
 <p align="left">
   <a href="https://www.linkedin.com/in/cicerokauealves/">
