@@ -14,6 +14,15 @@ Cursando Engenharia de Software, com interesse em desenvolvimento de software, I
 
 Confira também o meu repositório: [ Do aprendizado à prática: conheça meus projetos e minha trajetória em Tecnologia no meu portfólio. ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
 
+## LinkedIn
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/cicerokauealves/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+</p>
+
+
 ## Tecnologias
 
 `Python` · `JavaScript` · `HTML` · `CSS` · `Java` · `C#` · `SQL` · `Arduino` · `Git/GitHub`
@@ -39,7 +48,7 @@ Experiência audiovisual interativa não comercial, feita como projeto de fã in
 `JavaScript` `HTML` `CSS` `Animações` `Tipografia cinética` `Vídeo` `Partículas` `Interatividade` `Experiência digital`
 
 **[ VER PROJETO → ](https://github.com/callmekaue/the-cure-javascript)**
-**[ ASSISTA → ](https://thecure-callmekaue.netlify.app/?fbclid=PAdGRleAUSdYZwZG9mAmZkaWQWUOSyDsK_EPudllBeviu0t6PdoRQTu2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwjotptSrflYuSYhpHcXxeKJS_sVuj4d3Uh7b1U-z1lfjbXew5Stjuz01QGW_aem_2zDcCF1vo7CqnVmD7n8tlg)**
+**[ ASSISTA ](https://thecure-callmekaue.netlify.app/?fbclid=PAdGRleAUSdYZwZG9mAmZkaWQWUOSyDsK_EPudllBeviu0t6PdoRQTu2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwjotptSrflYuSYhpHcXxeKJS_sVuj4d3Uh7b1U-z1lfjbXew5Stjuz01QGW_aem_2zDcCF1vo7CqnVmD7n8tlg)**
 
 ---
 
