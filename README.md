@@ -4,13 +4,6 @@
   <b>Estudante de Engenharia de Software</b> · Foco em Tecnologia da Informação & Desenvolvimento
 </p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a> •
-  <a href="#-projetos-em-destaque">Projetos em destaque</a> •
-  <a href="#-projetos">Projetos</a> •
-  <a href="#-outros-projetos">Outros projetos</a>
-</p>
-
 ---
 
 ## Área profissional
@@ -19,7 +12,7 @@ Cursando Engenharia de Software, com interesse em desenvolvimento de software, I
 
 ## Meu repositório
 
-Confira também o meu repositório: [ COLOQUE O LINK AQUI ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
+Confira também o meu repositório: [ Do aprendizado à prática: conheça meus projetos e minha trajetória em Tecnologia no meu portfólio. ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
 
 ## Tecnologias
 
@@ -81,7 +74,7 @@ Projeto educacional de uma tela de login inspirada na interface da Riot Games, s
 
 ---
 
-## 📁 Outros projetos
+## Outros projetos
 
 - **[game](https://github.com/callmekaue/game)** — projeto experimental, sem grande destaque.
 
