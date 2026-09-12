@@ -17,6 +17,10 @@
 
 Cursando Engenharia de Software, com interesse em desenvolvimento de software, Inteligência Artificial e Tecnologia da Informação. Buscando oportunidades de estágio na área de TI.
 
+## Meu repositório
+
+Confira também o meu repositório: [ COLOQUE O LINK AQUI ](https://portolio-c-kaue-alves-da-silva.netlify.app/?fbclid=PAdGRleAUSfNNwZG9mAmZkaWQWUOQpYa78zjehI8F6oNxYmDbTTWF4oWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp8B1-jQOhimdpRG1M9UdDGpdbgo-1g3kcyIWVjGMNWWta7RLmFVAsrbx8wem_aem_MFFt5AVntTmKOSrAWmlt1A)
+
 ## Tecnologias
 
 `Python` · `JavaScript` · `HTML` · `CSS` · `Java` · `C#` · `SQL` · `Arduino` · `Git/GitHub`
