@@ -1,4 +1,4 @@
-<h1 align="center">Cícero Kauê</h1>
+<h1 align="center">C. Kauê Alves.</h1>
 
 <p align="center">
   <b>Estudante de Engenharia de Software</b> · Foco em Tecnologia da Informação & Desenvolvimento
@@ -13,17 +13,17 @@
 
 ---
 
-## 🧭 Área profissional
+## Área profissional
 
 Cursando Engenharia de Software, com interesse em desenvolvimento de software, Inteligência Artificial e Tecnologia da Informação. Buscando oportunidades de estágio na área de TI.
 
-## 🛠 Tecnologias
+## Tecnologias
 
 `Python` · `JavaScript` · `HTML` · `CSS` · `Java` · `C#` · `SQL` · `Arduino` · `Git/GitHub`
 
 ---
 
-## 🚀 Projetos em destaque
+## Projetos em destaque
 
 ### 01 — AGROTECH
 
@@ -42,10 +42,11 @@ Experiência audiovisual interativa não comercial, feita como projeto de fã in
 `JavaScript` `HTML` `CSS` `Animações` `Tipografia cinética` `Vídeo` `Partículas` `Interatividade` `Experiência digital`
 
 **[ VER PROJETO → ](https://github.com/callmekaue/the-cure-javascript)**
+**[ ASSISTA → ](https://thecure-callmekaue.netlify.app/?fbclid=PAdGRleAUSdYZwZG9mAmZkaWQWUOSyDsK_EPudllBeviu0t6PdoRQTu2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwjotptSrflYuSYhpHcXxeKJS_sVuj4d3Uh7b1U-z1lfjbXew5Stjuz01QGW_aem_2zDcCF1vo7CqnVmD7n8tlg)**
 
 ---
 
-## 📂 Projetos
+## Projetos
 
 <table>
 <tr>
