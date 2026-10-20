@@ -64,7 +64,7 @@ Aplicação web que consome uma API pública para exibir dados de Pokémon, com 
 
 `HTML` `CSS` `JavaScript` `API` `JSON` `DOM` `Responsividade`
 
-**[ VER PROJETO → ](https://github.com/callmekaue/pokedex)**
+**[ACESSE](https://github.com/callmekaue/pokedex)**
 
 </td>
 <td width="50%" valign="top">
@@ -75,7 +75,7 @@ Projeto educacional de uma tela de login inspirada na interface da Riot Games, s
 
 `HTML5` `CSS3` `JavaScript` `Responsividade` `Flexbox` `Media Queries` `UI/UX` `Animações`
 
-**[ VER PROJETO → ](https://github.com/callmekaue/login_riot)**
+**[ACESSE](https://github.com/callmekaue/login_riot)**
 
 </td>
 </tr>
