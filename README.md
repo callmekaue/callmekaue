@@ -68,8 +68,6 @@ Projeto de jogo.
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=callmekaue&show_icons=true&hide_border=true&bg_color=0B1F3A&title_color=4DA3FF&text_color=FFFFFF&icon_color=4DA3FF&locale=pt-br" alt="Estatísticas do GitHub" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=callmekaue&layout=compact&hide_border=true&bg_color=0B1F3A&title_color=4DA3FF&text_color=FFFFFF&locale=pt-br" alt="Linguagens mais utilizadas" />
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=callmekaue&bg_color=0B1F3A&color=FFFFFF&line=4DA3FF&point=FFFFFF&area=true&hide_border=true" alt="Gráfico de atividade do GitHub" />
-
 </div>
 
 ## Contribuições
