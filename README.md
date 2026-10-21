@@ -2,8 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F3A,50:123C69,100:1D5D9B&height=200&section=header&text=C.%20Kau%C3%AA%20Alves&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35" width="100%" alt="Cabeçalho azul-marinho animado" />
 
-# C. Kauê Alves
-
 ### Estudante de Engenharia de Software | Tecnologia da Informação | Desenvolvimento de Sistemas
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1000&color=4DA3FF&center=true&vCenter=true&width=650&lines=Estudante+de+Engenharia+de+Software;Desenvolvimento+de+Sistemas;Tecnologia+da+Informacao;Sempre+aprendendo+e+criando" alt="Texto animado" />
