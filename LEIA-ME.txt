@@ -1,0 +1,13 @@
+README do GitHub — C. Kauê Alves
+
+COMO USAR
+1. Extraia este ZIP no seu computador.
+2. Abra a pasta extraída.
+3. Entre em https://github.com/callmekaue/callmekaue
+4. Clique em Add file > Upload files.
+5. Envie o arquivo README.md que está solto na pasta.
+6. Clique em Commit changes para salvar.
+
+IMPORTANTE
+Este ZIP não contém pasta .github nem arquivos de configuração adicionais.
+As imagens animadas, ícones e gráficos do README são carregados de serviços externos; eles precisam estar disponíveis para aparecer.
