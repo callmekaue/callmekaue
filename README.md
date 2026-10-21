@@ -50,16 +50,19 @@ Projeto desenvolvido com JavaScript.
 Projeto de uma Pokédex.
 
 [![Repositório Pokédex](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Pok%C3%A9dex-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/pokedex)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://callmekaue.github.io/pokedex/)
 
 ### 4. Login Riot
 Projeto de interface de login inspirado na Riot Games.
 
 [![Repositório Login Riot](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Login%20Riot-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/login_riot)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://callmekaue.github.io/login_riot/)
 
-### 5. Game
-Projeto de jogo.
+### 5. Eco em foco de meio ambiente 
+Projeto de sustentabilidade e impacto social. 
 
-[![Repositório Game](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Game-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/game)
+[![Repositório Eco: Em foco de meio ambiente](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Game-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/eco-em-foco-meio-ambiente)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://ecoemforte.up.railway.app/)
 
 ## Estatísticas do GitHub
 
