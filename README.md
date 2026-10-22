@@ -35,19 +35,20 @@ Tenho interesse em desenvolvimento, infraestrutura de TI, organização de proce
 
 ## Projetos
 
-### 1. AGROTECH
-Projeto com sensores Arduino e interpretação de dados em Python, com foco em apoiar a agricultura familiar.
+### 1. GESTOR DE TURMAS
+Um sistema feito para gestar vários alunos sem dificuldade. 
 
-[![Repositório AGROTECH](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/AGROTECH)
+[![Repositório Gestor de Turmas](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/class-management)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://master-notas-martins.netlify.app/)
 
-### 2. THE CURE
-Projeto desenvolvido com JavaScript.
+### 2. The Cure
+Projeto desenvolvido com JavaScript, com amor de um fã da Olivia Rodrigo.
 
-[![Repositório THE CURE](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-THE%20CURE-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/the-cure-javascript)
+[![Repositório The Cure](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-THE%20CURE-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/the-cure-javascript)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://thecure-callmekaue.netlify.app/)
 
 ### 3. Pokédex
-Projeto de uma Pokédex.
+Projeto para registrar pesquisas dos pokemons.
 
 [![Repositório Pokédex](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Pok%C3%A9dex-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/pokedex)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://callmekaue.github.io/pokedex/)
@@ -63,6 +64,15 @@ Projeto de sustentabilidade e impacto social.
 
 [![Repositório Eco: Em foco de meio ambiente](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Game-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/eco-em-foco-meio-ambiente)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://ecoemforte.up.railway.app/)
+
+### 6. Agrotech
+Projeto com sensores Arduino e interpretação de dados em Python, com foco em apoiar a agricultura familiar.
+
+[![Repositório Agrotech](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/AGROTECH)
+
+### 7. Star Wars - Jogo de memória. 
+Projeto de um jogo de memória com alguns personagens de Star Wars: Guerra dos clones. 
+[![Repositório Star Wars: o Jogo](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github)]([https://github.com/callmekaue/starwars-game)
 
 ## Estatísticas do GitHub
 
