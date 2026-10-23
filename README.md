@@ -70,10 +70,13 @@ Projeto com sensores Arduino e interpretação de dados em Python, com foco em a
 
 [![Repositório Agrotech](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/AGROTECH)
 
-### 7. Star Wars - Jogo de memória. 
-Projeto de um jogo de memória com alguns personagens de Star Wars: Guerra dos clones. 
 
-[![Repositório Star Wars: o Jogo](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-STAR%20WARS-123C69?style=for-the-badge&logo=github)]([https://github.com/callmekaue/starwars-game)
+### 7. Star Wars - Jogo de memória.
+
+Projeto de um jogo de memória com alguns personagens de Star Wars: Guerra dos Clones.
+
+[![Repositório Star Wars: o Jogo](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-STAR%20WARS-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/starwars-game)
+
 
 ## Estatísticas do GitHub
 
