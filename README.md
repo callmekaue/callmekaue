@@ -35,10 +35,10 @@ Tenho interesse em desenvolvimento, infraestrutura de TI, organização de proce
 
 ## Projetos
 
-### 1. GESTOR DE TURMAS
+### 1. PACORA: GESTOR DE TURMAS
 Um sistema feito para gestar vários alunos sem dificuldade. 
 
-[![Repositório Gestor de Turmas](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-GESTÃO%20DE%20TURMA-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/class-management)
+[![Repositório Gestor de Turmas](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-PACORA:%20GESTÃO%20DE%20TURMA-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/class-management)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome)](https://master-notas-martins.netlify.app/)
 
 ### 2. The Cure
