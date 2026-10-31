@@ -117,23 +117,15 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=callmekaue&theme=transparent&hide_border=true&background=0B1F3A&ring=F25C3B&fire=F25C3B&currStreakLabel=4DA3FF&sideLabels=FFFFFF&dates=FFFFFF" alt="Sequência de contribuições" width="90%" />
 
+<br/><br/>
+
+![Seguidores](https://img.shields.io/github/followers/callmekaue?style=for-the-badge&logo=github&color=123C69&labelColor=0B1F3A)
+![Último commit](https://img.shields.io/github/last-commit/callmekaue/callmekaue?style=for-the-badge&logo=git&color=F25C3B&labelColor=0B1F3A)
+![Membro desde](https://img.shields.io/badge/GitHub-desde%202024-1D5D9B?style=for-the-badge&logo=github&labelColor=0B1F3A)
+
 <br/>
 
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Perfil" width="48%" />
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/3-stats.svg" alt="Estatísticas" width="48%" />
-
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositórios por linguagem" width="48%" />
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Linguagens com mais commits" width="48%" />
-
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Horários mais produtivos" width="70%" />
-
-</div>
-
-## 🐍 Contribuições (snake)
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/output/github-snake-dark.svg" alt="Cobra comendo contribuições" width="95%" />
+<img src="https://ghchart.rshah.org/4DA3FF/callmekaue" alt="Gráfico de contribuições" width="95%" />
 
 </div>
 
