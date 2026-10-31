@@ -115,35 +115,25 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=callmekaue&show_icons=true&hide_border=true&bg_color=0B1F3A&title_color=F25C3B&text_color=FFFFFF&icon_color=4DA3FF&locale=pt-br" alt="Estatísticas do GitHub" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=callmekaue&layout=compact&hide_border=true&bg_color=0B1F3A&title_color=F25C3B&text_color=FFFFFF&locale=pt-br" alt="Linguagens mais utilizadas" />
-
-<br/>
-
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=callmekaue&theme=transparent&hide_border=true&background=0B1F3A&ring=F25C3B&fire=F25C3B&currStreakLabel=4DA3FF&sideLabels=FFFFFF&dates=FFFFFF" alt="Sequência de contribuições" width="90%" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=callmekaue&bg_color=0B1F3A&color=4DA3FF&line=F25C3B&point=FFFFFF&area=true&area_color=123C69&hide_border=true" alt="Gráfico de atividade" width="95%" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Perfil" width="48%" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/3-stats.svg" alt="Estatísticas" width="48%" />
 
-<br/>
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositórios por linguagem" width="48%" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Linguagens com mais commits" width="48%" />
 
-<img src="https://github-profile-trophy.vercel.app/?username=callmekaue&theme=onedark&no-frame=true&no-bg=true&margin-w=12&row=1&column=7" alt="Troféus do GitHub" width="95%" />
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=callmekaue&layout=compact&hide_border=true&bg_color=0B1F3A&title_color=F25C3B&text_color=FFFFFF" alt="WakaTime (opcional)" width="48%" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Horários mais produtivos" width="70%" />
 
 </div>
-
-> 💡 **Dica:** o card do WakaTime só aparece se você criar conta em [wakatime.com](https://wakatime.com), instalar o plugin no editor e deixar o perfil público. Sem isso, apague essa imagem.
 
 ## 🐍 Contribuições (snake)
 
 <div align="center">
 
-<!-- Requer o workflow do Platane/snk: veja as instruções no final da conversa -->
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/output/github-contribution-grid-snake-dark.svg" alt="Cobra comendo contribuições" width="95%" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/output/github-snake-dark.svg" alt="Cobra comendo contribuições" width="95%" />
 
 </div>
 
