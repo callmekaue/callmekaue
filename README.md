@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner-dragao.jpg" width="100%" alt="Dragão em ondas, estilo ukiyo-e" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/banner-dragao.jpg" width="100%" alt="Dragão em ondas, estilo ukiyo-e" />
 
 <img src="https://capsule-render.vercel.app/api?type=transparent&height=120&section=header&text=Kau%C3%AA%20Alves&fontSize=58&fontColor=E8F1FF&fontAlignY=60&animation=fadeIn&desc=%E6%B3%A2%20%C2%B7%20Engenharia%20de%20Software%20%C2%B7%20TI%20%C2%B7%20IA&descSize=18&descAlignY=85" width="100%" alt="Nome" />
 
@@ -26,7 +26,7 @@ Gosto de projetos que unem software, infraestrutura de TI, organização de proc
 <div align="center">
 
 <!-- Opcional: coloque um GIF ukiyo-e seu em assets/ e descomente -->
-<!-- <img src="./assets/gif-ondas.gif" width="70%" alt="Ondas animadas" /> -->
+<!-- <img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/gif-ondas.gif" width="70%" alt="Ondas animadas" /> -->
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0B1F3A,50:F25C3B,100:0B1F3A&height=3&section=header" width="100%" alt="divisor" />
 
@@ -66,7 +66,7 @@ Gosto de projetos que unem software, infraestrutura de TI, organização de proc
 </details>
 
 <div align="center">
-<img src="./assets/banner-torii.jpg" width="100%" alt="Portal torii, garças e monte ao entardecer" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/banner-torii.jpg" width="100%" alt="Portal torii, garças e monte ao entardecer" />
 </div>
 
 ## 🐉 Projetos
@@ -151,7 +151,7 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 <div align="center">
 
-<img src="./assets/banner-dragao.jpg" width="60%" alt="Dragão" />
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/banner-dragao.jpg" width="60%" alt="Dragão" />
 
 **Obrigado por visitar meu perfil! 🌊**
 
