@@ -17,7 +17,7 @@
 
 ---
 
-## 🌊 Sobre mim
+## Sobre mim
 
 Sou estudante de Engenharia de Software, interessado em Tecnologia da Informação, desenvolvimento de sistemas e Inteligência Artificial. Busco oportunidades para aplicar meus conhecimentos, aprender com desafios reais e contribuir com soluções tecnológicas úteis.
 
@@ -32,7 +32,7 @@ Gosto de projetos que unem software, infraestrutura de TI, organização de proc
 
 </div>
 
-## ⛩️ Tecnologias e ferramentas
+## Tecnologias e ferramentas
 
 <div align="center">
 
@@ -50,7 +50,7 @@ Gosto de projetos que unem software, infraestrutura de TI, organização de proc
 - **Versionamento:** Git e GitHub.
 
 <details>
-<summary><b>🎴 Ver tudo em formato de badges</b></summary>
+<summary><b> Ver tudo em formato de badges</b></summary>
 <br/>
 
 ![Python](https://img.shields.io/badge/Python-0B1F3A?style=flat-square&logo=python&logoColor=4DA3FF)
@@ -69,7 +69,7 @@ Gosto de projetos que unem software, infraestrutura de TI, organização de proc
 <img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/banner-torii.jpg" width="100%" alt="Portal torii, garças e monte ao entardecer" />
 </div>
 
-## 🐉 Projetos
+## Projetos
 
 ### 1. PACORA: Gestor de Turmas
 Um sistema feito para gerir vários alunos sem dificuldade.
@@ -111,7 +111,7 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 [![Repositório Star Wars](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-STAR%20WARS-123C69?style=for-the-badge&logo=github)](https://github.com/callmekaue/starwars-game)
 
-## 📊 Dashboard de programação
+## Dashboards
 
 <div align="center">
 
@@ -132,10 +132,6 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 ---
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/banner-dragao.jpg" width="60%" alt="Dragão" />
-
-**Obrigado por visitar meu perfil! 🌊**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1F3A,50:123C69,100:F25C3B&height=100&section=footer" width="100%" alt="Rodapé" />
 
