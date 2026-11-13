@@ -72,7 +72,7 @@ Me interessam projetos que unem software, infraestrutura de TI, organização de
 Um sistema feito para gerir vários alunos sem dificuldade.
 
 [![Repositório PACORA: Gestor de Turmas](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-PACORA:%20GEST%C3%83O%20DE%20TURMA-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/class-management)
-[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://master-notas-martins.netlify.app/)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://pacora.kaue-alves-silva.workers.dev/)
 
 ### 2. The Cure
 Projeto desenvolvido com JavaScript, com amor de um fã da Olivia Rodrigo.
