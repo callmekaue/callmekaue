@@ -92,18 +92,12 @@ Projeto de interface de login inspirado na Riot Games.
 [![Repositório Login Riot](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Login%20Riot-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/login_riot)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://callmekaue.github.io/login_riot/)
 
-### 5. Eco em Foco: Meio Ambiente
-Projeto de sustentabilidade e impacto social.
-
-[![Repositório Eco em Foco: Meio Ambiente](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-ECO%20EM%20FOCO-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/eco-em-foco-meio-ambiente)
-[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://ecoemforte.up.railway.app/)
-
-### 6. Agrotech
+### 5. Agrotech
 Projeto com sensores Arduino e interpretação de dados em Python, com foco em apoiar a agricultura familiar.
 
 [![Repositório Agrotech](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/AGROTECH)
 
-### 7. Star Wars: Jogo da Memória
+### 6. Star Wars: Jogo da Memória
 Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 [![Repositório Star Wars: Jogo da Memória](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-STAR%20WARS-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/starwars-game)
