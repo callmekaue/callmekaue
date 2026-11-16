@@ -124,6 +124,20 @@ Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 </div>
 
+## Lago das carpas 鯉
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/lago-koi.svg" width="100%" alt="Lago japonês com carpas nadando e pétalas de sakura caindo" />
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/peixe-commits.svg" width="90%" alt="Koi que evolui conforme meus commits" />
+
+</div>
+
+> 登龍門 (tōryūmon): a lenda da carpa que nada contra a correnteza até atravessar o Portão do Dragão. Cada commit é uma braçada; o koi acima evolui sozinho conforme eu programo.
+
 ---
 
 <div align="center">
