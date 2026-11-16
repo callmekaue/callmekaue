@@ -220,31 +220,32 @@ def pergaminho():
 
 
 # ---------------------------------------------------------------- cards de projeto
-def card(n, titulo_, linhas, tags, padrao, arquivo, kanji):
-    rnd = random.Random(40 + n)
-    W, H = 1600, 300
-    o = [abrir(W, H, f"Projeto {n}: {titulo_}"), f'<defs>{defs_comuns()}</defs>']
+def seta(x, y, tam=14, cor="#5CC8FF", larg=2.2):
+    """Seta diagonal desenhada (o caractere de seta vira emoji em alguns celulares)."""
+    return (f'<path d="M{x},{y + tam} L{x + tam},{y} M{x + tam * .35:.1f},{y} L{x + tam},{y} L{x + tam},{y + tam * .65:.1f}" '
+            f'fill="none" stroke="{cor}" stroke-width="{larg}" stroke-linecap="round" stroke-linejoin="round"/>')
+
+
+def torii(x, y, cor="#D9483B"):
+    return (f'<g transform="translate({x},{y})" fill="{cor}"><path d="M-2,2 Q15,-3 32,2 L32,6 Q15,2 -2,6 Z"/>'
+            f'<rect x="2" y="9" width="26" height="3"/><rect x="5" y="6" width="3.5" height="22"/>'
+            f'<rect x="21.5" y="6" width="3.5" height="22"/></g>')
+
+
+# O card é dividido em duas imagens encaixadas no README: a esquerda (1120 px) abre o
+# repositório e a direita (480 px) abre a demonstração. Juntas parecem uma peça só.
+CW, CE, CH, R = 1600, 1120, 300, 24
+
+
+def card(n, titulo_, linhas, tags, padrao, kanji, tem_demo):
+    # ---- metade esquerda: informações + repositório
+    o = [abrir(CE, CH, f"Projeto {n}: {titulo_} (abrir repositório)"), f'<defs>{defs_comuns()}'
+         f'<linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="{CW}" y2="{CH}">'
+         '<stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#123C69"/></linearGradient></defs>']
     A = o.append
-    A(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="24" fill="url(#cartao)" stroke="#4DA3FF" stroke-opacity=".4"/>')
-    A(f'<clipPath id="cc"><rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="24"/></clipPath><g clip-path="url(#cc)">')
-    # lago à direita
-    A('<ellipse cx="1330" cy="150" rx="250" ry="120" fill="#1D5D9B" opacity=".55"/>')
-    A(f'<g opacity=".28">{seigaiha(1060, 240, 560, 4, 34)}</g>')
-    for i in range(3):
-        A(f'<circle cx="{1230 + i * 90}" cy="{110 + (i % 2) * 70}" r="2" fill="none" stroke="#CFE6FA" stroke-width="1.4" opacity="0">'
-          f'<animate attributeName="r" values="2;36" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/>'
-          f'<animate attributeName="opacity" values=".5;0" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/></circle>')
-    cam = "M1180,150 C1180,80 1480,70 1480,150 C1480,230 1180,220 1180,150 Z"
-    sentido = "" if n % 2 else ' keyPoints="1;0" keyTimes="0;1" calcMode="linear"'
-    rot = "auto" if n % 2 else "auto-reverse"
-    mov = f'<animateMotion dur="{12 + n}s" repeatCount="indefinite" rotate="{rot}" path="{cam}"{sentido}/>'
-    A(f'<g transform="translate(8,12)"><g>{mov}<ellipse rx="44" ry="12" fill="#06122A" opacity=".5" filter="url(#borrar)"/></g></g>')
-    A(f'<g>{mov}<g transform="scale(.7)">{koi(f"p{n}", padrao, fin=1.3, tail=1.2, tail_dur=1)}</g></g>')
-    for i in range(4):
-        A(f'<g transform="translate({1120 + i * 120},{60 + (i * 53) % 180})"><g><animateTransform attributeName="transform" '
-          f'type="rotate" values="0;360" dur="{16 + i * 3}s" repeatCount="indefinite"/><g transform="scale(1.3)">{petal()}</g></g></g>')
-    A(f'<text x="1560" y="{H - 26}" text-anchor="end" {SERIF} font-size="120" fill="#5CC8FF" opacity=".08">{kanji}</text>')
-    A('</g>')
+    A(f'<path d="M{R},1 H{CE} V{CH - 1} H{R} A{R - 1},{R - 1} 0 0 1 1,{CH - R} V{R} A{R - 1},{R - 1} 0 0 1 {R},1 Z" fill="url(#cg)"/>')
+    A(f'<path d="M{CE},1 H{R} A{R - 1},{R - 1} 0 0 0 1,{R} V{CH - R} A{R - 1},{R - 1} 0 0 0 {R},{CH - 1} H{CE}" '
+      f'fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
     A(hanko(52, 52, NUM[n - 1], 78))
     A(f'<text x="164" y="104" {LATIN} font-size="50" font-weight="700" fill="#F2FAFF">{titulo_}</text>')
     for i, l in enumerate(linhas):
@@ -252,12 +253,54 @@ def card(n, titulo_, linhas, tags, padrao, arquivo, kanji):
     x = 166
     for t in tags:
         w = len(t) * 12 + 34
-        A(f'<rect x="{x}" y="{214}" width="{w}" height="38" rx="19" fill="#0B1F3A" stroke="#5CC8FF" stroke-opacity=".6"/>'
-          f'<text x="{x + w / 2}" y="{239}" text-anchor="middle" {SANS} font-size="18" fill="#8FD8FF">{t}</text>')
+        A(f'<rect x="{x}" y="214" width="{w}" height="38" rx="19" fill="#0B1F3A" stroke="#5CC8FF" stroke-opacity=".6"/>'
+          f'<text x="{x + w / 2}" y="239" text-anchor="middle" {SANS} font-size="18" fill="#8FD8FF">{t}</text>')
         x += w + 12
-    A(f'<text x="{x + 20}" y="240" {SANS} font-size="18" fill="#6F8FB5">ver repositório ↗</text>')
+    A(f'<text x="{x + 16}" y="240" {SANS} font-size="18" fill="#8FB7DC">repositório</text>{seta(x + 122, 228, 11, "#8FB7DC", 2)}')
     A('</svg>')
-    salvar(arquivo, "".join(o))
+    salvar(f"card-{n}.svg", "".join(o))
+
+    # ---- metade direita: lago com o koi + demonstração
+    W = CW - CE
+    acao = "abrir demonstração" if tem_demo else "abrir repositório"
+    o = [abrir(W, CH, f"Projeto {n}: {titulo_} ({acao})"),
+         f'<defs>{defs_comuns()}<linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="{-CE}" y1="0" x2="{W}" y2="{CH}">'
+         '<stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#123C69"/></linearGradient>'
+         f'<clipPath id="cd"><path d="M0,1 H{W - R} A{R - 1},{R - 1} 0 0 1 {W - 1},{R} V{CH - R} A{R - 1},{R - 1} 0 0 1 {W - R},{CH - 1} H0 Z"/></clipPath></defs>']
+    A = o.append
+    A(f'<g clip-path="url(#cd)"><rect width="{W}" height="{CH}" fill="url(#cg)"/>')
+    A('<ellipse cx="250" cy="135" rx="210" ry="110" fill="#1D5D9B" opacity=".55"/>')
+    A(f'<g opacity=".28">{seigaiha(-40, 240, 560, 4, 34)}</g>')
+    A(f'<text x="{W - 30}" y="{CH - 80}" text-anchor="end" {SERIF} font-size="120" fill="#5CC8FF" opacity=".08">{kanji}</text>')
+    for i in range(3):
+        A(f'<circle cx="{150 + i * 90}" cy="{80 + (i % 2) * 70}" r="2" fill="none" stroke="#CFE6FA" stroke-width="1.4" opacity="0">'
+          f'<animate attributeName="r" values="2;36" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/>'
+          f'<animate attributeName="opacity" values=".5;0" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/></circle>')
+    cam = "M110,120 C110,62 390,52 390,120 C390,180 110,178 110,120 Z"
+    sentido = "" if n % 2 else ' keyPoints="1;0" keyTimes="0;1" calcMode="linear"'
+    rot = "auto" if n % 2 else "auto-reverse"
+    mov = f'<animateMotion dur="{12 + n}s" repeatCount="indefinite" rotate="{rot}" path="{cam}"{sentido}/>'
+    A(f'<g transform="translate(8,12)"><g>{mov}<ellipse rx="44" ry="12" fill="#06122A" opacity=".5" filter="url(#borrar)"/></g></g>')
+    A(f'<g>{mov}<g transform="scale(.62)">{koi(f"p{n}", padrao, fin=1.3, tail=1.2, tail_dur=1)}</g></g>')
+    for i in range(4):
+        A(f'<g transform="translate({60 + i * 110},{36 + (i * 53) % 140})"><g><animateTransform attributeName="transform" '
+          f'type="rotate" values="0;360" dur="{16 + i * 3}s" repeatCount="indefinite"/><g transform="scale(1.3)">{petal()}</g></g></g>')
+    A('</g>')
+    A(f'<path d="M0,1 H{W - R} A{R - 1},{R - 1} 0 0 1 {W - 1},{R} V{CH - R} A{R - 1},{R - 1} 0 0 1 {W - R},{CH - 1} H0" '
+      f'fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
+    rotulo = "demonstração" if tem_demo else "repositório"
+    bw = 276 if tem_demo else 236
+    bx = (W - bw) / 2
+    A(f'<rect x="{bx}" y="218" width="{bw}" height="52" rx="26" fill="#0B1F3A" stroke="#5CC8FF" stroke-width="2">'
+      f'<animate attributeName="stroke-opacity" values=".45;1;.45" dur="2.4s" repeatCount="indefinite"/></rect>')
+    if tem_demo:
+        A(torii(bx + 24, 230))
+        A(f'<text x="{bx + 68}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
+    else:
+        A(f'<text x="{bx + 30}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
+    A(seta(bx + bw - 42, 236, 15))
+    A('</svg>')
+    salvar(f"card-{n}-lago.svg", "".join(o))
 
 
 # ---------------------------------------------------------------- botões
@@ -271,8 +314,7 @@ def botao(rotulo, kanji, sub, arquivo):
     A(hanko(24, 24, kanji, 72))
     A(f'<text x="122" y="66" {LATIN} font-size="34" font-weight="700" fill="#F2FAFF">{rotulo}</text>')
     A(f'<text x="124" y="94" {SANS} font-size="17" fill="#8FB7DC">{sub}</text>')
-    A(f'<text x="{W - 34}" y="72" text-anchor="end" {SANS} font-size="30" fill="#5CC8FF">↗'
-      f'<animate attributeName="opacity" values=".4;1;.4" dur="2s" repeatCount="indefinite"/></text>')
+    A(f'<g>{seta(W - 58, 46, 22, "#5CC8FF", 2.8)}<animate attributeName="opacity" values=".4;1;.4" dur="2s" repeatCount="indefinite"/></g>')
     A('</svg>')
     salvar(arquivo, "".join(o))
 
@@ -338,8 +380,9 @@ if __name__ == "__main__":
         ("Star Wars: Jogo da Memória", ["Jogo da memória com personagens de A Guerra dos Clones."],
          ["HTML", "CSS", "JavaScript"], "asagi", "星"),
     ]
-    for i, (t, l, tg, p, k) in enumerate(projetos, 1):
-        card(i, t, l, tg, p, f"projeto-{i}.svg", k)
+    demos = [True, True, True, True, True, False, False]
+    for i, ((t, l, tg, p, k), d) in enumerate(zip(projetos, demos), 1):
+        card(i, t, l, tg, p, k, d)
     botao("Portfólio", "作", "currículo online e projetos", "botao-portfolio.svg")
     botao("LinkedIn", "縁", "vamos nos conectar", "botao-linkedin.svg")
     rodape()

@@ -40,7 +40,7 @@ Sou estudante de Engenharia de Software, com foco em **Análise de Dados** e int
 
 </div>
 
-| 🌊 Área | Ferramentas |
+| Área | Ferramentas |
 |---|---|
 | Linguagens e desenvolvimento | Python · JavaScript · HTML · CSS · Java · C# |
 | Dados | SQL · MySQL · análise de dados com Python |
@@ -51,24 +51,19 @@ Sou estudante de Engenharia de Software, com foco em **Análise de Dados** e int
 
 <a><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/titulo-projetos.svg" width="100%" alt="三 Projetos 潮" /></a>
 
-<a href="https://github.com/callmekaue/modelagem-difeecult"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-1.svg" width="100%" alt="Difeecult: Sistema ERP" /></a>
-<p align="right"><a href="https://callmekaue.github.io/modelagem-difeecult/"><img src="https://img.shields.io/badge/%E2%9B%A9%EF%B8%8F%20Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&labelColor=0B1F3A" alt="Acessar demonstração do Difeecult" /></a></p>
+<a href="https://github.com/callmekaue/modelagem-difeecult"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-1.svg" width="70%" alt="Difeecult: Sistema ERP: abrir repositório" /></a><a href="https://callmekaue.github.io/modelagem-difeecult/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-1-lago.svg" width="30%" alt="Difeecult: Sistema ERP: abrir demonstração" /></a>
 
-<a href="https://github.com/callmekaue/class-management"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-2.svg" width="100%" alt="PACORA: Gestor de Turmas" /></a>
-<p align="right"><a href="https://pacora.kaue-alves-silva.workers.dev/"><img src="https://img.shields.io/badge/%E2%9B%A9%EF%B8%8F%20Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&labelColor=0B1F3A" alt="Acessar demonstração do PACORA" /></a></p>
+<a href="https://github.com/callmekaue/class-management"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-2.svg" width="70%" alt="PACORA: Gestor de Turmas: abrir repositório" /></a><a href="https://pacora.kaue-alves-silva.workers.dev/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-2-lago.svg" width="30%" alt="PACORA: Gestor de Turmas: abrir demonstração" /></a>
 
-<a href="https://github.com/callmekaue/the-cure-javascript"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-3.svg" width="100%" alt="The Cure" /></a>
-<p align="right"><a href="https://thecure-callmekaue.netlify.app/"><img src="https://img.shields.io/badge/%E2%9B%A9%EF%B8%8F%20Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&labelColor=0B1F3A" alt="Acessar demonstração do The Cure" /></a></p>
+<a href="https://github.com/callmekaue/the-cure-javascript"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-3.svg" width="70%" alt="The Cure: abrir repositório" /></a><a href="https://thecure-callmekaue.netlify.app/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-3-lago.svg" width="30%" alt="The Cure: abrir demonstração" /></a>
 
-<a href="https://github.com/callmekaue/pokedex"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-4.svg" width="100%" alt="Pokédex" /></a>
-<p align="right"><a href="https://callmekaue.github.io/pokedex/"><img src="https://img.shields.io/badge/%E2%9B%A9%EF%B8%8F%20Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&labelColor=0B1F3A" alt="Acessar demonstração da Pokédex" /></a></p>
+<a href="https://github.com/callmekaue/pokedex"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-4.svg" width="70%" alt="Pokédex: abrir repositório" /></a><a href="https://callmekaue.github.io/pokedex/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-4-lago.svg" width="30%" alt="Pokédex: abrir demonstração" /></a>
 
-<a href="https://github.com/callmekaue/login_riot"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-5.svg" width="100%" alt="Login Riot" /></a>
-<p align="right"><a href="https://callmekaue.github.io/login_riot/"><img src="https://img.shields.io/badge/%E2%9B%A9%EF%B8%8F%20Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&labelColor=0B1F3A" alt="Acessar demonstração do Login Riot" /></a></p>
+<a href="https://github.com/callmekaue/login_riot"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-5.svg" width="70%" alt="Login Riot: abrir repositório" /></a><a href="https://callmekaue.github.io/login_riot/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-5-lago.svg" width="30%" alt="Login Riot: abrir demonstração" /></a>
 
-<a href="https://github.com/callmekaue/AGROTECH"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-6.svg" width="100%" alt="Agrotech" /></a>
+<a href="https://github.com/callmekaue/AGROTECH"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-6.svg" width="70%" alt="Agrotech: abrir repositório" /></a><a href="https://github.com/callmekaue/AGROTECH"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-6-lago.svg" width="30%" alt="Agrotech: abrir repositório" /></a>
 
-<a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/projeto-7.svg" width="100%" alt="Star Wars: Jogo da Memória" /></a>
+<a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-7.svg" width="70%" alt="Star Wars: Jogo da Memória: abrir repositório" /></a><a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-7-lago.svg" width="30%" alt="Star Wars: Jogo da Memória: abrir repositório" /></a>
 
 <a><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/divisor-ondas.svg" width="100%" alt="Divisor de ondas" /></a>
 
