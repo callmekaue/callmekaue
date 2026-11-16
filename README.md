@@ -68,36 +68,42 @@ Me interessam projetos que unem software, infraestrutura de TI, organização de
 
 ## Projetos 潮
 
-### 1. PACORA: Gestor de Turmas
+### 1. Difeecult: Sistema ERP.
+Sistema feito para uma empresa parceira de moda esportiva gestar, ter controle de estoque, valores a ganhar, a pagar e muito mais.
+
+[![Repositório Difeecult:](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Difeecult-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/modelagem-difeecult)
+[![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://callmekaue.github.io/modelagem-difeecult/)
+
+### 2. PACORA: Gestor de Turmas
 Um sistema feito para gerir vários alunos sem dificuldade.
 
 [![Repositório PACORA: Gestor de Turmas](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-PACORA:%20GEST%C3%83O%20DE%20TURMA-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/class-management)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://pacora.kaue-alves-silva.workers.dev/)
 
-### 2. The Cure
+### 3. The Cure
 Projeto desenvolvido com JavaScript, com amor de um fã da Olivia Rodrigo.
 
 [![Repositório The Cure](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-THE%20CURE-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/the-cure-javascript)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://thecure-callmekaue.netlify.app/)
 
-### 3. Pokédex
+### 4. Pokédex
 Projeto para registrar pesquisas dos pokémons.
 
 [![Repositório Pokédex](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Pok%C3%A9dex-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/pokedex)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://callmekaue.github.io/pokedex/)
 
-### 4. Login Riot
+### 5. Login Riot
 Projeto de interface de login inspirado na Riot Games.
 
 [![Repositório Login Riot](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-Login%20Riot-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/login_riot)
 [![Acessar demonstração](https://img.shields.io/badge/Acessar-demonstra%C3%A7%C3%A3o-1D5D9B?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0B1F3A)](https://callmekaue.github.io/login_riot/)
 
-### 5. Agrotech
+### 6. Agrotech
 Projeto com sensores Arduino e interpretação de dados em Python, com foco em apoiar a agricultura familiar.
 
 [![Repositório Agrotech](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-AGROTECH-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/AGROTECH)
 
-### 6. Star Wars: Jogo da Memória
+### 7. Star Wars: Jogo da Memória
 Jogo da memória com personagens de Star Wars: A Guerra dos Clones.
 
 [![Repositório Star Wars: Jogo da Memória](https://img.shields.io/badge/Ver%20reposit%C3%B3rio-STAR%20WARS-123C69?style=for-the-badge&logo=github&labelColor=0B1F3A)](https://github.com/callmekaue/starwars-game)
