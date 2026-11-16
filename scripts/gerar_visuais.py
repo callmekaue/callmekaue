@@ -147,14 +147,13 @@ def cabecalho():
               f'<animate attributeName="opacity" values=".8;0" dur="1.6s" begin="{b + k * .3:.1f}s;rep{x}{k}.end+5.4s"/></ellipse>')
     A(ramo_direita(W, rnd, 420, 34))
     # textos
-    A(f'<text x="118" y="160" {SERIF} font-size="24" letter-spacing="10" fill="#5CC8FF">カウエ・アルヴェス</text>')
+    A(f'<text x="118" y="155" {SERIF} font-size="24" letter-spacing="10" fill="#5CC8FF">カウエ・アルヴェス</text>')
     A(f'<text x="112" y="262" {LATIN} font-size="108" font-weight="700" fill="#F2FAFF">Kauê Alves</text>')
     A('<rect x="118" y="290" width="90" height="4" rx="2" fill="#D9483B"/>')
     A(f'<text x="118" y="336" {SANS} font-size="25" fill="#C9DDF5">Engenharia de Software · Análise de Dados · TI · IA</text>')
-    A(hanko(690, 186, "海", 70))
     A(petalas_caindo(W, H, 26, rnd))
     A('</svg>')
-    salvar("cabecalho.svg", "".join(o))
+    salvar("cabecalho-v2.svg", "".join(o))
 
 
 # ---------------------------------------------------------------- títulos

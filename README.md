@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<a><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/cabecalho.svg" width="100%" alt="Kauê Alves: Engenharia de Software, Análise de Dados, TI e IA" /></a>
+<a><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/cabecalho-v2.svg" width="100%" alt="Kauê Alves: Engenharia de Software, Análise de Dados, TI e IA" /></a>
 
 <a><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1000&color=5CC8FF&center=true&vCenter=true&width=720&lines=Estudante+de+Engenharia+de+Software;Foco+em+An%C3%A1lise+de+Dados;Desenvolvimento+de+Sistemas+e+IA;Cada+bug+%C3%A9+uma+onda+a+ser+atravessada" alt="Texto animado" /></a>
 
