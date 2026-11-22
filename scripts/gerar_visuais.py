@@ -234,73 +234,128 @@ def torii(x, y, cor="#D9483B"):
 
 # O card é dividido em duas imagens encaixadas no README: a esquerda (1120 px) abre o
 # repositório e a direita (480 px) abre a demonstração. Juntas parecem uma peça só.
-CW, CE, CH, R = 1600, 1120, 300, 24
+CW, CH, R = 1600, 300, 24
 
 
-def card(n, titulo_, linhas, tags, padrao, kanji, tem_demo):
-    # ---- metade esquerda: informações + repositório
-    o = [abrir(CE, CH, f"Projeto {n}: {titulo_} (abrir repositório)"), f'<defs>{defs_comuns()}'
-         f'<linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="{CW}" y2="{CH}">'
-         '<stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#123C69"/></linearGradient></defs>']
+def _grad(desloc):
+    return (f'<linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="{-desloc}" y1="0" x2="{CW - desloc}" y2="{CH}">'
+            '<stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#123C69"/></linearGradient>')
+
+
+def _forma(w, esq, dir_):
+    """Contorno de um pedaço do card: cantos arredondados só nas pontas do card inteiro."""
+    a = R - 1
+    top_l = f"M{R},1" if esq else "M0,1"
+    d = top_l
+    d += f" H{w - R} A{a},{a} 0 0 1 {w - 1},{R} V{CH - R} A{a},{a} 0 0 1 {w - R},{CH - 1}" if dir_ else f" H{w} V{CH - 1}"
+    d += f" H{R} A{a},{a} 0 0 1 1,{CH - R} V{R} A{a},{a} 0 0 1 {R},1 Z" if esq else " H0 Z"
+    # borda sem as emendas internas
+    b = (f"M{w},1 " if not dir_ else f"M{w - R},{CH - 1} ")
+    if dir_:
+        b = (f"M0,1 H{w - R} A{a},{a} 0 0 1 {w - 1},{R} V{CH - R} A{a},{a} 0 0 1 {w - R},{CH - 1} H0" if not esq else d)
+    elif esq:
+        b = f"M{w},1 H{R} A{a},{a} 0 0 0 1,{R} V{CH - R} A{a},{a} 0 0 0 {R},{CH - 1} H{w}"
+    else:
+        b = f"M0,1 H{w} M0,{CH - 1} H{w}"
+    return d, b
+
+
+def _peca_lado(n, titulo_, kind, desloc, w, ultimo, padrao, kanji, com_koi):
+    acao = {"video": "assistir vídeo", "demo": "abrir demonstração", "repo": "abrir repositório"}[kind]
+    forma, borda = _forma(w, False, ultimo)
+    o = [abrir(w, CH, f"Projeto {n}: {titulo_} ({acao})"),
+         f'<defs>{defs_comuns()}{_grad(desloc)}<clipPath id="cd"><path d="{forma}"/></clipPath></defs>']
     A = o.append
-    A(f'<path d="M{R},1 H{CE} V{CH - 1} H{R} A{R - 1},{R - 1} 0 0 1 1,{CH - R} V{R} A{R - 1},{R - 1} 0 0 1 {R},1 Z" fill="url(#cg)"/>')
-    A(f'<path d="M{CE},1 H{R} A{R - 1},{R - 1} 0 0 0 1,{R} V{CH - R} A{R - 1},{R - 1} 0 0 0 {R},{CH - 1} H{CE}" '
-      f'fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
+    A(f'<g clip-path="url(#cd)"><rect width="{w}" height="{CH}" fill="url(#cg)"/>')
+    A(f'<ellipse cx="{w / 2 + 10:.0f}" cy="135" rx="{w * .44:.0f}" ry="110" fill="#1D5D9B" opacity=".55"/>')
+    A(f'<g opacity=".28">{seigaiha(-40, 240, w + 80, 4, 34)}</g>')
+    if ultimo:
+        A(f'<text x="{w - 30}" y="{CH - 80}" text-anchor="end" {SERIF} font-size="120" fill="#5CC8FF" opacity=".08">{kanji}</text>')
+    for i in range(2):
+        A(f'<circle cx="{w * (.3 + i * .4):.0f}" cy="{80 + i * 70}" r="2" fill="none" stroke="#CFE6FA" stroke-width="1.4" opacity="0">'
+          f'<animate attributeName="r" values="2;34" dur="5s" begin="{i * 1.8}s" repeatCount="indefinite"/>'
+          f'<animate attributeName="opacity" values=".5;0" dur="5s" begin="{i * 1.8}s" repeatCount="indefinite"/></circle>')
+    if com_koi:
+        x1, x2 = w * .2, w * .82
+        cam = f"M{x1:.0f},120 C{x1:.0f},62 {x2:.0f},52 {x2:.0f},120 C{x2:.0f},180 {x1:.0f},178 {x1:.0f},120 Z"
+        sentido = "" if n % 2 else ' keyPoints="1;0" keyTimes="0;1" calcMode="linear"'
+        rot = "auto" if n % 2 else "auto-reverse"
+        mov = f'<animateMotion dur="{12 + n}s" repeatCount="indefinite" rotate="{rot}" path="{cam}"{sentido}/>'
+        A(f'<g transform="translate(8,12)"><g>{mov}<ellipse rx="44" ry="12" fill="#06122A" opacity=".5" filter="url(#borrar)"/></g></g>')
+        A(f'<g>{mov}<g transform="scale({.62 if w > 400 else .5})">{koi(f"p{n}{kind}", padrao, fin=1.3, tail=1.2, tail_dur=1)}</g></g>')
+    for i in range(3):
+        A(f'<g transform="translate({w * (.15 + i * .3):.0f},{36 + (i * 53) % 140})"><g><animateTransform attributeName="transform" '
+          f'type="rotate" values="0;360" dur="{16 + i * 3}s" repeatCount="indefinite"/><g transform="scale(1.3)">{petal()}</g></g></g>')
+    A('</g>')
+    A(f'<path d="{borda}" fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
+
+    if kind == "video":
+        cx, cy = w / 2, 118
+        A(f'<circle cx="{cx}" cy="{cy}" r="46" fill="none" stroke="#5CC8FF" stroke-width="2" opacity=".6">'
+          f'<animate attributeName="r" values="46;62" dur="2.2s" repeatCount="indefinite"/>'
+          f'<animate attributeName="opacity" values=".6;0" dur="2.2s" repeatCount="indefinite"/></circle>')
+        A(f'<circle cx="{cx}" cy="{cy}" r="46" fill="#C8372D"/><circle cx="{cx}" cy="{cy}" r="40" fill="none" stroke="#F7E9DC" stroke-width="1.6"/>')
+        A(f'<path d="M{cx - 13},{cy - 20} L{cx + 21},{cy} L{cx - 13},{cy + 20} Z" fill="#F7E9DC"/>')
+        bw = 236
+        bx = (w - bw) / 2
+        A(f'<rect x="{bx}" y="218" width="{bw}" height="52" rx="26" fill="#0B1F3A" stroke="#5CC8FF" stroke-width="2"/>')
+        A(f'<text x="{w / 2}" y="251" text-anchor="middle" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">assistir vídeo</text>')
+    else:
+        rotulo = "demonstração" if kind == "demo" else "repositório"
+        compacto = w < 400
+        bw = (236 if compacto else 276) if kind == "demo" else 236
+        bx = (w - bw) / 2
+        if compacto and kind == "demo":
+            # sem koi neste pedaço: um torii grande no lugar
+            A(f'<g transform="translate({w / 2 - 45:.0f},62) scale(3)">{torii(0, 0)}</g>')
+        A(f'<rect x="{bx}" y="218" width="{bw}" height="52" rx="26" fill="#0B1F3A" stroke="#5CC8FF" stroke-width="2">'
+          f'<animate attributeName="stroke-opacity" values=".45;1;.45" dur="2.4s" repeatCount="indefinite"/></rect>')
+        if kind == "demo" and not compacto:
+            A(torii(bx + 24, 230))
+            A(f'<text x="{bx + 68}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
+        else:
+            A(f'<text x="{bx + 28}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
+        A(seta(bx + bw - 42, 236, 15))
+    A('</svg>')
+    return "".join(o)
+
+
+def card(n, titulo_, linhas, tags, padrao, kanji, tem_demo, tem_video=False):
+    """Card dividido em pedaços encaixados no README, cada um com seu próprio link:
+    informações (repositório) | vídeo (opcional) | demonstração ou repositório."""
+    if tem_video:
+        larg_esq, lados = 1000, [("video", 300), ("demo" if tem_demo else "repo", 300)]
+    else:
+        larg_esq, lados = 1120, [("demo" if tem_demo else "repo", 480)]
+
+    # ---- pedaço esquerdo: informações + repositório
+    forma, borda = _forma(larg_esq, True, False)
+    o = [abrir(larg_esq, CH, f"Projeto {n}: {titulo_} (abrir repositório)"), f'<defs>{defs_comuns()}{_grad(0)}</defs>']
+    A = o.append
+    A(f'<path d="{forma}" fill="url(#cg)"/><path d="{borda}" fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
     A(hanko(52, 52, NUM[n - 1], 78))
     A(f'<text x="164" y="104" {LATIN} font-size="50" font-weight="700" fill="#F2FAFF">{titulo_}</text>')
     for i, l in enumerate(linhas):
         A(f'<text x="166" y="{150 + i * 34}" {SANS} font-size="25" fill="#C9DDF5">{l}</text>')
     x = 166
+    pc, pad = (11, 28) if tem_video else (12, 34)
     for t in tags:
-        w = len(t) * 12 + 34
+        w = len(t) * pc + pad
         A(f'<rect x="{x}" y="214" width="{w}" height="38" rx="19" fill="#0B1F3A" stroke="#5CC8FF" stroke-opacity=".6"/>'
           f'<text x="{x + w / 2}" y="239" text-anchor="middle" {SANS} font-size="18" fill="#8FD8FF">{t}</text>')
-        x += w + 12
-    A(f'<text x="{x + 16}" y="240" {SANS} font-size="18" fill="#8FB7DC">repositório</text>{seta(x + 122, 228, 11, "#8FB7DC", 2)}')
+        x += w + 10
+    A(f'<text x="{x + 14}" y="240" {SANS} font-size="18" fill="#8FB7DC">repositório</text>{seta(x + 120, 228, 11, "#8FB7DC", 2)}')
     A('</svg>')
     salvar(f"card-{n}.svg", "".join(o))
 
-    # ---- metade direita: lago com o koi + demonstração
-    W = CW - CE
-    acao = "abrir demonstração" if tem_demo else "abrir repositório"
-    o = [abrir(W, CH, f"Projeto {n}: {titulo_} ({acao})"),
-         f'<defs>{defs_comuns()}<linearGradient id="cg" gradientUnits="userSpaceOnUse" x1="{-CE}" y1="0" x2="{W}" y2="{CH}">'
-         '<stop offset="0" stop-color="#0B1F3A"/><stop offset="1" stop-color="#123C69"/></linearGradient>'
-         f'<clipPath id="cd"><path d="M0,1 H{W - R} A{R - 1},{R - 1} 0 0 1 {W - 1},{R} V{CH - R} A{R - 1},{R - 1} 0 0 1 {W - R},{CH - 1} H0 Z"/></clipPath></defs>']
-    A = o.append
-    A(f'<g clip-path="url(#cd)"><rect width="{W}" height="{CH}" fill="url(#cg)"/>')
-    A('<ellipse cx="250" cy="135" rx="210" ry="110" fill="#1D5D9B" opacity=".55"/>')
-    A(f'<g opacity=".28">{seigaiha(-40, 240, 560, 4, 34)}</g>')
-    A(f'<text x="{W - 30}" y="{CH - 80}" text-anchor="end" {SERIF} font-size="120" fill="#5CC8FF" opacity=".08">{kanji}</text>')
-    for i in range(3):
-        A(f'<circle cx="{150 + i * 90}" cy="{80 + (i % 2) * 70}" r="2" fill="none" stroke="#CFE6FA" stroke-width="1.4" opacity="0">'
-          f'<animate attributeName="r" values="2;36" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/>'
-          f'<animate attributeName="opacity" values=".5;0" dur="5s" begin="{i * 1.6}s" repeatCount="indefinite"/></circle>')
-    cam = "M110,120 C110,62 390,52 390,120 C390,180 110,178 110,120 Z"
-    sentido = "" if n % 2 else ' keyPoints="1;0" keyTimes="0;1" calcMode="linear"'
-    rot = "auto" if n % 2 else "auto-reverse"
-    mov = f'<animateMotion dur="{12 + n}s" repeatCount="indefinite" rotate="{rot}" path="{cam}"{sentido}/>'
-    A(f'<g transform="translate(8,12)"><g>{mov}<ellipse rx="44" ry="12" fill="#06122A" opacity=".5" filter="url(#borrar)"/></g></g>')
-    A(f'<g>{mov}<g transform="scale(.62)">{koi(f"p{n}", padrao, fin=1.3, tail=1.2, tail_dur=1)}</g></g>')
-    for i in range(4):
-        A(f'<g transform="translate({60 + i * 110},{36 + (i * 53) % 140})"><g><animateTransform attributeName="transform" '
-          f'type="rotate" values="0;360" dur="{16 + i * 3}s" repeatCount="indefinite"/><g transform="scale(1.3)">{petal()}</g></g></g>')
-    A('</g>')
-    A(f'<path d="M0,1 H{W - R} A{R - 1},{R - 1} 0 0 1 {W - 1},{R} V{CH - R} A{R - 1},{R - 1} 0 0 1 {W - R},{CH - 1} H0" '
-      f'fill="none" stroke="#4DA3FF" stroke-opacity=".4" stroke-width="1.5"/>')
-    rotulo = "demonstração" if tem_demo else "repositório"
-    bw = 276 if tem_demo else 236
-    bx = (W - bw) / 2
-    A(f'<rect x="{bx}" y="218" width="{bw}" height="52" rx="26" fill="#0B1F3A" stroke="#5CC8FF" stroke-width="2">'
-      f'<animate attributeName="stroke-opacity" values=".45;1;.45" dur="2.4s" repeatCount="indefinite"/></rect>')
-    if tem_demo:
-        A(torii(bx + 24, 230))
-        A(f'<text x="{bx + 68}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
-    else:
-        A(f'<text x="{bx + 30}" y="251" {SANS} font-size="21" font-weight="600" fill="#F2FAFF">{rotulo}</text>')
-    A(seta(bx + bw - 42, 236, 15))
-    A('</svg>')
-    salvar(f"card-{n}-lago.svg", "".join(o))
+    # ---- pedaços da direita
+    desloc = larg_esq
+    for i, (kind, w) in enumerate(lados):
+        ultimo = i == len(lados) - 1
+        nome = {"video": f"card-{n}-video.svg"}.get(kind, f"card-{n}-lago.svg")
+        com_koi = (kind == "video") or not tem_video
+        salvar(nome, _peca_lado(n, titulo_, kind, desloc, w, ultimo, padrao, kanji, com_koi))
+        desloc += w
 
 
 # ---------------------------------------------------------------- botões
@@ -381,8 +436,9 @@ if __name__ == "__main__":
          ["HTML", "CSS", "JavaScript"], "asagi", "星"),
     ]
     demos = [True, True, True, True, True, False, False]
-    for i, ((t, l, tg, p, k), d) in enumerate(zip(projetos, demos), 1):
-        card(i, t, l, tg, p, k, d)
+    videos = [False] * 7  # o anúncio do Difeecult toca direto no README, logo abaixo do card
+    for i, ((t, l, tg, p, k), d, v) in enumerate(zip(projetos, demos, videos), 1):
+        card(i, t, l, tg, p, k, d, v)
     botao("Portfólio", "作", "currículo online e projetos", "botao-portfolio.svg")
     botao("LinkedIn", "縁", "vamos nos conectar", "botao-linkedin.svg")
     rodape()

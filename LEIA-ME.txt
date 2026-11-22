@@ -1,0 +1,28 @@
+COMO SUBIR TUDO NO REPOSITÓRIO callmekaue
+
+1) Arquivos
+   Add file > Upload files: envie README.md, lago-koi.svg, peixe-commits.svg
+   e as pastas assets/ e scripts/ (pode substituir os existentes).
+   NÃO envie o DifeeCult_anuncio.mp4 por aqui (ele entra no passo 2).
+
+2) Vídeo do anúncio dentro do README
+   - Abra o README.md no GitHub e clique no lápis (Edit).
+   - Procure a linha que começa com: <!-- ANÚNCIO DO DIFEECULT
+   - Apague essa linha inteira e, com o cursor no lugar dela, arraste o
+     arquivo DifeeCult_anuncio.mp4 para dentro do editor.
+   - Espere terminar o envio: aparece um link https://github.com/user-attachments/assets/...
+     sozinho na linha. Deixe linhas em branco acima e abaixo dele.
+   - Clique em Commit changes. O vídeo aparece com player logo abaixo do card do Difeecult.
+
+3) Workflows (cobra e koi de commits)
+   A pasta .github/workflows não sobe pelo navegador. Crie à mão:
+   Add file > Create new file > nome: .github/workflows/snake.yml
+   cole o conteúdo do arquivo de mesmo nome e clique em Commit changes.
+   Repita com .github/workflows/peixe-commits.yml.
+   Depois, na aba Actions, rode "Gerar cobra de contribuições" e
+   "Atualizar koi de commits" (botão Run workflow).
+
+4) Apague o que não é mais usado
+   assets/projeto-1.svg a assets/projeto-7.svg, assets/cabecalho.svg,
+   assets/card-1-video.svg (se existir), cabecalho.svg e gerar_visuais.py
+   soltos na raiz, snake.yml e profile-cards.yml na raiz.
