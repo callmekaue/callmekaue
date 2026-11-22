@@ -55,7 +55,9 @@ Sou estudante de Engenharia de Software, com foco em **Análise de Dados** e int
 
 <div align="center">
 
-<!-- ANÚNCIO DO DIFEECULT: no editor do GitHub, apague esta linha inteira e arraste o arquivo DifeeCult_anuncio.mp4 para o lugar dela. -->
+https://github.com/user-attachments/assets/f823c7e2-e03f-43df-a559-2652312eb35e
+
+
 
 </div>
 
