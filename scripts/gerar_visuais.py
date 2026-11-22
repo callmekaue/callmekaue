@@ -436,7 +436,7 @@ if __name__ == "__main__":
          ["HTML", "CSS", "JavaScript"], "asagi", "星"),
     ]
     demos = [True, True, True, True, True, False, False]
-    videos = [False] * 7  # o anúncio do Difeecult toca direto no README, logo abaixo do card
+    videos = [True, False, False, False, False, False, False]  # Difeecult: botão "assistir vídeo"
     for i, ((t, l, tg, p, k), d, v) in enumerate(zip(projetos, demos, videos), 1):
         card(i, t, l, tg, p, k, d, v)
     botao("Portfólio", "作", "currículo online e projetos", "botao-portfolio.svg")
