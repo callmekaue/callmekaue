@@ -16,7 +16,7 @@ ASSETS.mkdir(exist_ok=True)
 SERIF = 'font-family="Noto Serif JP, Yu Mincho, Hiragino Mincho ProN, Georgia, serif"'
 LATIN = 'font-family="Georgia, Noto Serif, Times New Roman, serif"'
 SANS = 'font-family="Segoe UI, Helvetica, Arial, sans-serif"'
-NUM = ["一", "二", "三", "四", "五", "六", "七"]
+NUM = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
 CORES_SAKURA = ["#F9C6D3", "#F7B6C8", "#FBD7E2"]
 
 
@@ -320,7 +320,7 @@ def _peca_lado(n, titulo_, kind, desloc, w, ultimo, padrao, kanji, com_koi):
     return "".join(o)
 
 
-def card(n, titulo_, linhas, tags, padrao, kanji, tem_demo, tem_video=False):
+def card(n, slug, titulo_, linhas, tags, padrao, kanji, tem_demo, tem_video=False):
     """Card dividido em pedaços encaixados no README, cada um com seu próprio link:
     informações (repositório) | vídeo (opcional) | demonstração ou repositório."""
     if tem_video:
@@ -346,13 +346,13 @@ def card(n, titulo_, linhas, tags, padrao, kanji, tem_demo, tem_video=False):
         x += w + 10
     A(f'<text x="{x + 14}" y="240" {SANS} font-size="18" fill="#8FB7DC">repositório</text>{seta(x + 120, 228, 11, "#8FB7DC", 2)}')
     A('</svg>')
-    salvar(f"card-{n}.svg", "".join(o))
+    salvar(f"card-{slug}.svg", "".join(o))
 
     # ---- pedaços da direita
     desloc = larg_esq
     for i, (kind, w) in enumerate(lados):
         ultimo = i == len(lados) - 1
-        nome = {"video": f"card-{n}-video.svg"}.get(kind, f"card-{n}-lago.svg")
+        nome = {"video": f"card-{slug}-video.svg"}.get(kind, f"card-{slug}-lago.svg")
         com_koi = (kind == "video") or not tem_video
         salvar(nome, _peca_lado(n, titulo_, kind, desloc, w, ultimo, padrao, kanji, com_koi))
         desloc += w
@@ -418,27 +418,32 @@ if __name__ == "__main__":
     titulo(4, "Lago das carpas", "鯉", "koi · a carpa", "titulo-lago.svg", "ogon")
     titulo(5, "Painel de programação", "龍", "ryū · o dragão", "titulo-painel.svg", "showa")
     pergaminho()
+    # (slug, título, linhas, tags, padrão do koi, kanji, tem demo, tem vídeo)
+    # A ordem desta lista é a ordem dos cards no README; o slug dá nome aos arquivos.
     projetos = [
-        ("Difeecult: Sistema ERP", ["ERP para uma empresa parceira de moda esportiva: estoque,",
-                                   "vendas, contas a receber, a pagar e muito mais."],
-         ["Node.js", "Express", "SQLite", "PostgreSQL", "JavaScript"], "ogon", "帳"),
-        ("PACORA: Gestor de Turmas", ["Sistema para gerir turmas e muitos alunos sem dificuldade."],
-         ["HTML", "JavaScript", "SQL", "Cloudflare"], "kohaku", "学"),
-        ("The Cure", ["Projeto em JavaScript, feito com amor de fã da Olivia Rodrigo."],
-         ["HTML", "JavaScript", "JSON"], "showa", "音"),
-        ("Pokédex", ["Projeto para registrar e pesquisar pokémons."],
-         ["HTML", "CSS", "JavaScript"], "sanke", "図"),
-        ("Login Riot", ["Interface de login inspirada na Riot Games."],
-         ["HTML", "CSS", "JavaScript"], "tancho", "門"),
-        ("Agrotech", ["Sensores Arduino e análise de dados em Python", "para apoiar a agricultura familiar."],
-         ["Arduino", "Python", "Dados"], "chagoi", "農"),
-        ("Star Wars: Jogo da Memória", ["Jogo da memória com personagens de A Guerra dos Clones."],
-         ["HTML", "CSS", "JavaScript"], "asagi", "星"),
+        ("ophelia", "OPHELIA: Controle de TI",
+         ["Inventário de TI: onde está cada equipamento, com quem e desde",
+          "quando, com termos de responsabilidade aceitos por link."],
+         ["React", "Chart.js", "Supabase", "jsPDF", "Web Crypto"], "fuji", "守", True, False),
+        ("difeecult", "Difeecult: Sistema ERP",
+         ["ERP para uma empresa parceira de moda esportiva: estoque,",
+          "vendas, contas a receber, a pagar e muito mais."],
+         ["Node.js", "Express", "SQLite", "PostgreSQL", "JavaScript"], "ogon", "帳", True, True),
+        ("pacora", "PACORA: Gestor de Turmas", ["Sistema para gerir turmas e muitos alunos sem dificuldade."],
+         ["HTML", "JavaScript", "SQL", "Cloudflare"], "kohaku", "学", True, False),
+        ("the-cure", "The Cure", ["Projeto em JavaScript, feito com amor de fã da Olivia Rodrigo."],
+         ["HTML", "JavaScript", "JSON"], "showa", "音", True, False),
+        ("pokedex", "Pokédex", ["Projeto para registrar e pesquisar pokémons."],
+         ["HTML", "CSS", "JavaScript"], "sanke", "図", True, False),
+        ("login-riot", "Login Riot", ["Interface de login inspirada na Riot Games."],
+         ["HTML", "CSS", "JavaScript"], "tancho", "門", True, False),
+        ("agrotech", "Agrotech", ["Sensores Arduino e análise de dados em Python", "para apoiar a agricultura familiar."],
+         ["Arduino", "Python", "Dados"], "chagoi", "農", False, False),
+        ("star-wars", "Star Wars: Jogo da Memória", ["Jogo da memória com personagens de A Guerra dos Clones."],
+         ["HTML", "CSS", "JavaScript"], "asagi", "星", False, False),
     ]
-    demos = [True, True, True, True, True, False, False]
-    videos = [True, False, False, False, False, False, False]  # Difeecult: botão "assistir vídeo"
-    for i, ((t, l, tg, p, k), d, v) in enumerate(zip(projetos, demos, videos), 1):
-        card(i, t, l, tg, p, k, d, v)
+    for i, (slug, t, l, tg, p, k, d, v) in enumerate(projetos, 1):
+        card(i, slug, t, l, tg, p, k, d, v)
     botao("Portfólio", "作", "currículo online e projetos", "botao-portfolio.svg")
     botao("LinkedIn", "縁", "vamos nos conectar", "botao-linkedin.svg")
     rodape()
