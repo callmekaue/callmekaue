@@ -65,7 +65,7 @@ Sou estudante de Engenharia de Software, com foco em **Análise de Dados** e int
 
 <a href="https://github.com/callmekaue/AGROTECH"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-agrotech.svg" width="70%" alt="Agrotech: abrir repositório" /></a><a href="https://github.com/callmekaue/AGROTECH"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-agrotech-lago.svg" width="30%" alt="Agrotech: abrir repositório" /></a>
 
-<a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-star-wars.svg" width="70%" alt="Star Wars: Jogo da Memória: abrir repositório" /></a><a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-star-wars-lago.svg" width="30%" alt="Star Wars: Jogo da Memória: abrir repositório" /></a>
+<a href="https://github.com/callmekaue/starwars-game"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-star-wars.svg" width="70%" alt="Star Wars: Jogo da Memória: abrir repositório" /></a><a href="https://callmekaue.github.io/starwars-game/"><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/assets/card-star-wars-lago.svg" width="30%" alt="Star Wars: Jogo da Memória: abrir demonstração" /></a>
 
 <a><img src="https://raw.githubusercontent.com/callmekaue/callmekaue/main/divisor-ondas.svg" width="100%" alt="Divisor de ondas" /></a>
 
